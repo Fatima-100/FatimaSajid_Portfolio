@@ -9,7 +9,7 @@ export const PERSONAL_INFO = {
   currentRole: 'Web Development Intern @ Quantum Logics',
   email: 'hifamii100@gmail.com',
   github: 'https://github.com/Fatima-100',
-  linkedin: 'https://linkedin.com/in/fatima-sajid',
+  linkedin: 'https://www.linkedin.com/in/fatima-sajid-80738a382',
   location: 'Lahore, Pakistan',
   status: 'Open to internships, junior roles & engineering collaborations',
 };

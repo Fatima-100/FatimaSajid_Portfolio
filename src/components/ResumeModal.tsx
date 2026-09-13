@@ -105,7 +105,7 @@ CERTIFICATIONS:
               </a>
               <span>•</span>
               <a href={PERSONAL_INFO.linkedin} target="_blank" rel="noreferrer" className="text-[#dfb098] hover:underline">
-                linkedin.com/in/fatima-sajid
+                linkedin.com/in/fatima-sajid-80738a382
               </a>
               <span>•</span>
               <span>{PERSONAL_INFO.location}</span>
