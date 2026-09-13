@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Sora', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #0b0914;
+    color: #f4f2f8;
+  }
+  h1, h2, h3, .font-display {
+    font-family: 'Fraunces', serif;
+  }
+  code, pre, .font-code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Obsidian Onyx & Rose Gold Luxe Glass Classes */
+.glass-panel {
+  background: rgba(21, 18, 34, 0.78);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(223, 176, 152, 0.08) inset;
+}
+
+.glass-panel-dark {
+  background: rgba(14, 12, 22, 0.88);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 50px -12px rgba(0, 0, 0, 0.85);
+}
+
+.glass-pill {
+  background: rgba(28, 24, 46, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(223, 176, 152, 0.25);
+}
+
+/* Custom Rose Gold & Obsidian Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0914;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(223, 176, 152, 0.35);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(223, 176, 152, 0.65);
+}
