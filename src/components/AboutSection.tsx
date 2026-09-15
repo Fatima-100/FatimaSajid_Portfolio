@@ -52,6 +52,12 @@ export const AboutSection: React.FC = () => {
                   alt="Fatima Sajid"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (target.src.endsWith('/avatar.jpeg')) {
+                      target.src = '/avatar.jpg';
+                    }
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0b0914]/80 via-transparent to-transparent" />
                 

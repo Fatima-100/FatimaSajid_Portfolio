@@ -8,8 +8,8 @@ interface AvatarContextType {
   setIsUploadModalOpen: (open: boolean) => void;
 }
 
-const DEFAULT_AVATAR = '/avatar.jpeg?v=3';
-const STORAGE_KEY = 'fatima_portfolio_avatar_v3';
+const DEFAULT_AVATAR = '/avatar.jpeg';
+const STORAGE_KEY = 'fatima_portfolio_avatar';
 
 const AvatarContext = createContext<AvatarContextType | undefined>(undefined);
 

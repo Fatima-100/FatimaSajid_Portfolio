@@ -153,6 +153,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenTerminal }) => {
                   alt="Fatima Sajid"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (target.src.endsWith('/avatar.jpeg')) {
+                      target.src = '/avatar.jpg';
+                    }
+                  }}
                 />
                 <span className="absolute bottom-1 right-1 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-[#141024]" />
               </div>
