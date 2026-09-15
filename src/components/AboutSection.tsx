@@ -1,9 +1,9 @@
 import React from 'react';
-import { Sparkles, Server, Cpu, Compass, GitBranch, Camera, Eye } from 'lucide-react';
+import { Sparkles, Server, Cpu, Compass, GitBranch, Eye, CheckCircle2 } from 'lucide-react';
 import { useAvatar } from '../context/AvatarContext';
 
 export const AboutSection: React.FC = () => {
-  const { avatarUrl, setIsUploadModalOpen } = useAvatar();
+  const { avatarUrl } = useAvatar();
 
   const principles = [
     {
@@ -29,10 +29,10 @@ export const AboutSection: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-24 px-6 relative z-10">
+    <section id="about" className="py-14 sm:py-16 px-4 sm:px-6 relative z-10">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="flex flex-col items-center text-center mb-16">
+        <div className="flex flex-col items-center text-center mb-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#1b172a] border border-[#dfb098]/30 text-xs font-semibold text-[#dfb098] mb-3.5 shadow-md">
             <Sparkles className="w-3.5 h-3.5 text-[#dfb098]" />
             <span>Background & Engineering Foundation</span>
@@ -51,17 +51,15 @@ export const AboutSection: React.FC = () => {
                   src={avatarUrl}
                   alt="Fatima Sajid"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0b0914]/80 via-transparent to-transparent" />
                 
-                {/* Quick Upload Button on About Photo */}
-                <button
-                  onClick={() => setIsUploadModalOpen(true)}
-                  className="absolute top-3 right-3 w-8 h-8 rounded-full bg-[#1b172b]/90 hover:bg-[#282142] text-[#dfb098] border border-[#dfb098]/40 shadow-lg flex items-center justify-center transition-all hover:scale-110 active:scale-95 cursor-pointer"
-                  title="Upload / Change to your real photo"
-                >
-                  <Camera className="w-4 h-4" />
-                </button>
+                {/* Fixed Profile Verified Tag */}
+                <div className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-[#130f24]/90 backdrop-blur-md border border-[#dfb098]/40 shadow-lg flex items-center gap-1.5 text-[11px] font-bold text-[#dfb098]">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                  <span>Fixed Profile</span>
+                </div>
 
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <span className="text-xs uppercase tracking-wider font-bold text-[#dfb098]">

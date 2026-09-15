@@ -4,11 +4,11 @@ import { CERTIFICATIONS } from '../data';
 
 export const CertificationsSection: React.FC = () => {
   return (
-    <section id="certifications" className="py-24 px-6 relative z-10">
+    <section id="certifications" className="py-14 sm:py-16 px-4 sm:px-6 relative z-10">
       <div className="max-w-6xl mx-auto">
         
         {/* Section Header */}
-        <div className="flex flex-col items-center text-center mb-16">
+        <div className="flex flex-col items-center text-center mb-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#1b172a] border border-[#dfb098]/30 text-xs font-semibold text-[#dfb098] mb-3.5 shadow-md">
             <Sparkles className="w-3.5 h-3.5 text-[#dfb098]" />
             <span>Verified Industry Credentials</span>

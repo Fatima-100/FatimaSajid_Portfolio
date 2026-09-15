@@ -23,11 +23,11 @@ export const ProjectsSection: React.FC = () => {
     PROJECTS.find((p) => p.id === activeProjectId) || filteredProjects[0] || PROJECTS[0];
 
   return (
-    <section id="projects" className="py-24 px-6 relative z-10 scroll-mt-20">
-      <div className="max-w-7xl mx-auto">
+    <section id="projects" className="py-14 sm:py-16 px-4 sm:px-6 relative z-10 scroll-mt-20">
+      <div className="w-full max-w-[1360px] mx-auto">
         
         {/* Section Header */}
-        <div className="flex flex-col items-center text-center mb-12">
+        <div className="flex flex-col items-center text-center mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1b172a] border border-[#dfb098]/30 text-xs font-semibold text-[#dfb098] mb-4 shadow-lg">
             <Sparkles className="w-3.5 h-3.5 text-[#dfb098]" />
             <span>Interactive 3D Architecture & Production Engineering</span>
@@ -110,7 +110,7 @@ export const ProjectsSection: React.FC = () => {
 
         {/* View Mode 1: 3D Stage in Front of Every Project Card (Default) */}
         {layoutMode === '3d-cards' ? (
-          <div className="max-w-5xl mx-auto flex flex-col gap-10">
+          <div className="w-full max-w-6xl mx-auto flex flex-col gap-8">
             {filteredProjects.map((project) => {
               const isActive = activeProject.id === project.id;
               return (
@@ -161,7 +161,7 @@ export const ProjectsSection: React.FC = () => {
                   <div className="mb-6 rounded-2xl overflow-hidden border border-[#dfb098]/30 shadow-2xl">
                     <Project3DStage
                       project={project}
-                      heightClass="h-[280px] sm:h-[330px]"
+                      heightClass="h-[300px] sm:h-[350px]"
                     />
                   </div>
 

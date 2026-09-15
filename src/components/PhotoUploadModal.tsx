@@ -161,7 +161,7 @@ export const PhotoUploadModal: React.FC = () => {
           <div className="flex items-start gap-2 p-3 rounded-xl bg-[#1b172a] border border-white/10 text-[11px] text-[#c5bed5]">
             <AlertCircle className="w-4 h-4 shrink-0 text-[#dfb098] mt-0.5" />
             <p>
-              <strong>Direct File Option:</strong> You can also put your photo file directly inside the project's <code className="font-mono bg-[#0c0a15] px-1 py-0.5 rounded text-[#dfb098]">/public/avatar.jpg</code> folder in the code editor to make it permanent.
+              <strong>Direct File Option:</strong> You can also put your photo file directly inside the project's <code className="font-mono bg-[#0c0a15] px-1 py-0.5 rounded text-[#dfb098]">/public/avatar.jpeg</code> folder in the code editor to make it permanent.
             </p>
           </div>
         </div>

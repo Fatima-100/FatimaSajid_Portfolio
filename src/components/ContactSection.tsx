@@ -33,11 +33,11 @@ export const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 relative z-10">
+    <section id="contact" className="py-14 sm:py-16 px-4 sm:px-6 relative z-10">
       <div className="max-w-4xl mx-auto">
         
         {/* Main Card */}
-        <div className="p-8 sm:p-12 rounded-3xl bg-[#141222]/90 border border-white/10 shadow-2xl relative overflow-hidden">
+        <div className="p-6 sm:p-10 rounded-3xl bg-[#141222]/90 border border-white/10 shadow-2xl relative overflow-hidden">
           
           <div className="text-center max-w-xl mx-auto mb-10">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#1b172a] border border-[#dfb098]/30 text-xs font-semibold text-[#dfb098] mb-4 shadow-md">

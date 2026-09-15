@@ -60,7 +60,9 @@ const MODES: ModeConfig[] = [
   },
 ];
 
-export const HeroInteractiveNexus: React.FC = () => {
+export const HeroInteractiveNexus: React.FC<{ className?: string }> = ({
+  className = '',
+}) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [activeMode, setActiveMode] = useState<NexusMode>('cielab');
   const [pulseCount, setPulseCount] = useState(0);
@@ -388,7 +390,7 @@ export const HeroInteractiveNexus: React.FC = () => {
   return (
     <div
       id="hero-interactive-nexus"
-      className="relative flex flex-col items-center mb-8 max-w-lg w-full group"
+      className={`relative flex flex-col items-center max-w-lg w-full group ${className}`}
     >
       {/* Ambient Radial Aura behind Nexus */}
       <div
